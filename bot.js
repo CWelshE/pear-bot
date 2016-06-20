@@ -1,7 +1,7 @@
 /*
- * ----
+ * --------------------
  * CODELITT INCUBATOR
- * ----
+ * --------------------
  *
  * Pear: A Programming Pair Generator
  *
@@ -167,7 +167,7 @@ controller.hears(
 // Return the pairs from the list of participants
 controller.hears(
     ['Generate'],
-    'direct_message',
+    'direct_message,direct_mention,mention',
     function(bot,msg) {
       bot.reply(msg,
           "Generating Pear pairs!");
